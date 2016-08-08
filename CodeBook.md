@@ -1,6 +1,9 @@
 Student:Cuiqing Li
+
 Github Account:tiandiao123
+
 Email:lixxx3527@gmail.com
+
 Submitted Date:8/7/2016
 
 First of all, I will talk about some details about my cleandata.xlsx. In the cleandata.xlsx file, I store the final tidy data set hello_data in this file. This hello_data is a data.frame which has average value of every variable for each activity(WALKING, WALKINGUPSTAIRS,WALKINGDOWNSTAIRS,SITTING,SATNDING,LAYING).
