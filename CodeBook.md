@@ -63,7 +63,7 @@ fBodyAccJerk-mean()-Y
 fBodyAccJerk-mean()-Z	
 fBodyAccJerk-std()-X	
 fBodyAccJerk-std()-Y	
-fBodyAccJerk-std()-Z	
+fBodyAccJerk-std()-Z	 
 fBodyAccJerk-meanFreq()-X	
 fBodyAccJerk-meanFreq()-Y	
 fBodyAccJerk-meanFreq()-Z	

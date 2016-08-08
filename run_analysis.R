@@ -1,4 +1,4 @@
-#this is my codes of the project assignment(getting and cleanning data)
+# this is my codes of the project assignment(getting and cleanning data)
 
 library(dplyr)
 library(xlsx)
