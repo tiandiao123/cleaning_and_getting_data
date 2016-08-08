@@ -13,13 +13,9 @@ average of tBodyAcc-mean()-X
 average of tBodyAcc-mean()-Y	
 average of tBodyAcc-mean()-Z	
 average of tBodyAcc-std()-X	
-
 average of tBodyAcc-std()-Y
-
 average of tBodyAcc-std()-Z
-
 average of tGravityAcc-mean()-X	
-
 average of tGravityAcc-mean()-Y	
 average of tGravityAcc-mean()-Z	
 average of tGravityAcc-std()-X	
@@ -45,7 +41,6 @@ average of tBodyGyroJerk-std()-Y
 average of tBodyGyroJerk-std()-Z	
 average of tBodyAccMag-mean()	
 average of tBodyAccMag-std()	
-
 average of tGravityAccMag-mean()	
 average of tGravityAccMag-std()	
 average of tBodyAccJerkMag-mean()	
@@ -58,13 +53,9 @@ average of fBodyAcc-mean()-X
 average of fBodyAcc-mean()-Y
 average of fBodyAcc-mean()-Z
 average of fBodyAcc-std()-X	
-
 average of fBodyAcc-std()-Y
-
 average of fBodyAcc-std()-Z
-
 average of fBodyAcc-meanFreq()-X
-
 average of fBodyAcc-meanFreq()-Y	
 average of fBodyAcc-meanFreq()-Z	
 average of fBodyAccJerk-mean()-X	
