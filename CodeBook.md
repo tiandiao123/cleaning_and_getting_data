@@ -9,84 +9,84 @@ Submitted Date:8/7/2016
 First of all, I will talk about some details about my cleandata.txt. In the cleandata.txt file, I store the final tidy data set hello_data in the file(actually they are the same, I just want to make sure the data readable in xlsx file). This hello_data is a data.frame which has average value of every variable for each activity(WALKING, WALKINGUPSTAIRS,WALKINGDOWNSTAIRS,SITTING,SATNDING,LAYING) based on different different subject_id. Notice that I group final_data with subject_id and activity_label. 
 Moreover, the cleandata.txt has average value (unit:HZ) of different variables(only includes mean and standard deviation measurements)  based on different activity label names(WALKING, WALKINGUPSTAIRS,WALKINGDOWNSTAIRS,SITTING,SATNDING,LAYING) and different subject_ids. The first column of the txt file is the activity names, and the second column of the txt file is the subject id.  
 As you can see, cleandata.txt has column names which correspond to all thr mean and standard deviation measurements: 
-average of tBodyAcc-mean()-X	
-average of tBodyAcc-mean()-Y	
-average of tBodyAcc-mean()-Z	
-average of tBodyAcc-std()-X	
-average of tBodyAcc-std()-Y
-average of tBodyAcc-std()-Z
-average of tGravityAcc-mean()-X	
-average of tGravityAcc-mean()-Y	
-average of tGravityAcc-mean()-Z	
-average of tGravityAcc-std()-X	
-average of tGravityAcc-std()-Y	
-average of tGravityAcc-std()-Z	
-average of tBodyAccJerk-mean()-X	
-average of tBodyAccJerk-mean()-Y
-average of tBodyAccJerk-mean()-Z
-average of tBodyAccJerk-std()-X	
-average of tBodyAccJerk-std()-Y	
-average of tBodyAccJerk-std()-Z	
-average of tBodyGyro-mean()-X	
-average of tBodyGyro-mean()-Y	
-average of tBodyGyro-mean()-Z	
-average of tBodyGyro-std()-X	
-average of tBodyGyro-std()-Y	
-average of tBodyGyro-std()-Z	
-average of tBodyGyroJerk-mean()-X	
-average of tBodyGyroJerk-mean()-Y	
-average of tBodyGyroJerk-mean()-Z	
-average of tBodyGyroJerk-std()-X	
-average of tBodyGyroJerk-std()-Y	
-average of tBodyGyroJerk-std()-Z	
-average of tBodyAccMag-mean()	
-average of tBodyAccMag-std()	
-average of tGravityAccMag-mean()	
-average of tGravityAccMag-std()	
-average of tBodyAccJerkMag-mean()	
-average of tBodyAccJerkMag-std()	
-average of tBodyGyroMag-mean()	
-average of tBodyGyroMag-std()	
-average of tBodyGyroJerkMag-mean()	
-average of tBodyGyroJerkMag-std()	
-average of fBodyAcc-mean()-X	
-average of fBodyAcc-mean()-Y
-average of fBodyAcc-mean()-Z
-average of fBodyAcc-std()-X	
-average of fBodyAcc-std()-Y
-average of fBodyAcc-std()-Z
-average of fBodyAcc-meanFreq()-X
-average of fBodyAcc-meanFreq()-Y	
-average of fBodyAcc-meanFreq()-Z	
-average of fBodyAccJerk-mean()-X	
-average of fBodyAccJerk-mean()-Y	
-average of fBodyAccJerk-mean()-Z	
-average of fBodyAccJerk-std()-X	
-average of fBodyAccJerk-std()-Y	
-average of fBodyAccJerk-std()-Z	
-average of fBodyAccJerk-meanFreq()-X	
-average of fBodyAccJerk-meanFreq()-Y	
-average of fBodyAccJerk-meanFreq()-Z	
-average of fBodyGyro-mean()-X	
-average of fBodyGyro-mean()-Y	
-average of fBodyGyro-mean()-Z	
-average of fBodyGyro-std()-X	
-average of fBodyGyro-std()-Y	
-average of fBodyGyro-std()-Z	
-average of fBodyGyro-meanFreq()-X	
-average of fBodyGyro-meanFreq()-Y	
-average of fBodyGyro-meanFreq()-Z	
-average of fBodyAccMag-mean()	
-average of fBodyAccMag-std()	
-average of fBodyAccMag-meanFreq()	
-average of fBodyBodyAccJerkMag-mean()	
-average of fBodyBodyAccJerkMag-std()	
-average of fBodyBodyAccJerkMag-meanFreq()	
-average of fBodyBodyGyroMag-mean()	
-average of fBodyBodyGyroMag-std()	
-average of fBodyBodyGyroMag-meanFreq()	
-average of fBodyBodyGyroJerkMag-mean()	
-average of fBodyBodyGyroJerkMag-std()	
-average of fBodyBodyGyroJerkMag-meanFreq(). 
+tBodyAcc-mean()-X	
+tBodyAcc-mean()-Y	
+tBodyAcc-mean()-Z	
+tBodyAcc-std()-X	
+tBodyAcc-std()-Y
+tBodyAcc-std()-Z
+tGravityAcc-mean()-X	
+tGravityAcc-mean()-Y	
+tGravityAcc-mean()-Z	
+tGravityAcc-std()-X	
+tGravityAcc-std()-Y	
+tGravityAcc-std()-Z	
+tBodyAccJerk-mean()-X	
+tBodyAccJerk-mean()-Y
+tBodyAccJerk-mean()-Z
+tBodyAccJerk-std()-X	
+tBodyAccJerk-std()-Y	
+tBodyAccJerk-std()-Z	
+tBodyGyro-mean()-X	
+tBodyGyro-mean()-Y	
+tBodyGyro-mean()-Z	
+tBodyGyro-std()-X	
+tBodyGyro-std()-Y	
+tBodyGyro-std()-Z	
+tBodyGyroJerk-mean()-X	
+tBodyGyroJerk-mean()-Y	
+tBodyGyroJerk-mean()-Z	
+tBodyGyroJerk-std()-X	
+tBodyGyroJerk-std()-Y	
+tBodyGyroJerk-std()-Z	
+tBodyAccMag-mean()	
+tBodyAccMag-std()	
+tGravityAccMag-mean()	
+tGravityAccMag-std()	
+tBodyAccJerkMag-mean()	
+tBodyAccJerkMag-std()	
+tBodyGyroMag-mean()	
+tBodyGyroMag-std()	
+tBodyGyroJerkMag-mean()	
+tBodyGyroJerkMag-std()	
+fBodyAcc-mean()-X	
+fBodyAcc-mean()-Y
+fBodyAcc-mean()-Z
+fBodyAcc-std()-X	
+fBodyAcc-std()-Y
+fBodyAcc-std()-Z
+fBodyAcc-meanFreq()-X
+fBodyAcc-meanFreq()-Y	
+fBodyAcc-meanFreq()-Z	
+fBodyAccJerk-mean()-X	
+fBodyAccJerk-mean()-Y	
+fBodyAccJerk-mean()-Z	
+fBodyAccJerk-std()-X	
+fBodyAccJerk-std()-Y	
+fBodyAccJerk-std()-Z	
+fBodyAccJerk-meanFreq()-X	
+fBodyAccJerk-meanFreq()-Y	
+fBodyAccJerk-meanFreq()-Z	
+fBodyGyro-mean()-X	
+fBodyGyro-mean()-Y	
+fBodyGyro-mean()-Z	
+fBodyGyro-std()-X	
+fBodyGyro-std()-Y	
+fBodyGyro-std()-Z	
+fBodyGyro-meanFreq()-X	
+fBodyGyro-meanFreq()-Y	
+fBodyGyro-meanFreq()-Z	
+fBodyAccMag-mean()	
+fBodyAccMag-std()	
+fBodyAccMag-meanFreq()	
+fBodyBodyAccJerkMag-mean()	
+fBodyBodyAccJerkMag-std()	
+fBodyBodyAccJerkMag-meanFreq()	
+fBodyBodyGyroMag-mean()	
+fBodyBodyGyroMag-std()	
+fBodyBodyGyroMag-meanFreq()	
+fBodyBodyGyroJerkMag-mean()	
+fBodyBodyGyroJerkMag-std()	
+fBodyBodyGyroJerkMag-meanFreq(). 
 
 Then, the cleandata.txt shows average value of differnt variables above based on different activity names(WALKING, WALKINGUPSTAIRS,WALKINGDOWNSTAIRS,SITTING,SATNDING,LAYING) and the subject ids. The unit for average value is HZ. 
