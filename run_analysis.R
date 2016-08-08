@@ -48,10 +48,14 @@ subject_id_test<-read.table('test/subject_test.txt')
 subject_id<-rbind(subject_id_train,subject_id_test)
 colnames(subject_id)<-'subject_id'
 
+#add subjct_id into the final_data
 final_data<-cbind(subject_id,final_data)
 
+#group final_data by activity labels and subject_id so that we can compute their mean values of variables based on subject_id and activity
 hello_data<-group_by(final_data,activity_label,subject_id)
 hello_data<-summarise_each(hello_data,funs(mean))
+
+#store the tidy data into a cleandata.txt
 write.table(hello_data,"cleandata.txt",row.names = FALSE)
 
 
