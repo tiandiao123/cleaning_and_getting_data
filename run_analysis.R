@@ -40,41 +40,19 @@ col_names<-grepl("activity_label|mean|std",colnames(total_data),perl = TRUE)
 
 final_data<-total_data[col_names]
 
+#extract subject_id from subject_train.txt and subject_test.txt
+subject_id_train<-read.table('./train/subject_train.txt')
+subject_id_test<-read.table('test/subject_test.txt')
 
-#seperate final_data int 6 parts based on different activity_label names
-walking_data<-final_data[final_data$activity_label=='WALKING',]
-walkingupstairs_data<-final_data[final_data$activity_label=='WALKING_UPSTAIRS',]
-walkingdownstairs_data<-final_data[final_data$activity_label=='WALKING_DOWNSTAIRS',]
-sitting_data<-final_data[final_data$activity_label=='SITTING',]
-standing_data<-final_data[final_data$activity_label=='STANDING',]
-laying_data<-final_data[final_data$activity_label=='LAYING',]
+#combine subject_id_train and subject_id_test
+subject_id<-rbind(subject_id_train,subject_id_test)
+colnames(subject_id)<-'subject_id'
 
-#calulate average values of each variables
-WALKING<-apply(walking_data[,2:80],2,mean)
-WALKINGUPSTAIRS<-apply(walkingupstairs_data[,2:80],2,mean)
-WALKINGDOWNSTAIRS<-apply(walkingdownstairs_data[,2:80],2,mean)
-SITTING<-apply(sitting_data[,2:80],2,mean)
-STANDING<-apply(standing_data[,2:80],2,mean)
-LAYING<-apply(laying_data[,2:80],2,mean)
+final_data<-cbind(subject_id,final_data)
 
-#combine the varbales above and get a matrix, and change the matrix into a data.frame
-#this is the tidy data we need to get
-hello_data<-rbind(WALKING,WALKINGUPSTAIRS,WALKINGDOWNSTAIRS,SITTING,STANDING,LAYING)
-cnames<-paste("average of", colnames(hello_data))
-colnames(hello_data)<-cnames
-
-
-hello_data<-as.data.frame(hello_data)
-x<-x<-rownames(hello_data)
-x<-as.data.frame(x)
-colnames(x)<-'activity_label'
-hello_data<-cbind(x,hello_data)
-#write tidy dataset hello_data into a xlsx file and a txt file 
-write.xlsx(hello_data,"cleandata.xlsx",row.names = FALSE)
-write.table(hello_data,'cleandata.txt',row.names=FALSE)
-
-
-
+hello_data<-group_by(final_data,activity_label,subject_id)
+hello_data<-summarise_each(hello_data,funs(mean))
+write.table(hello_data,"cleandata.txt",row.names = FALSE)
 
 
 
