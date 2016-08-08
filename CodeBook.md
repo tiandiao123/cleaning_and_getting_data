@@ -6,9 +6,9 @@ Email:lixxx3527@gmail.com
 
 Submitted Date:8/7/2016
 
-First of all, I will talk about some details about my cleandata.xlsx. In the cleandata.xlsx file, I store the final tidy data set hello_data in this file. This hello_data is a data.frame which has average value of every variable for each activity(WALKING, WALKINGUPSTAIRS,WALKINGDOWNSTAIRS,SITTING,SATNDING,LAYING).
+First of all, I will talk about some details about my cleandata.xlsx and cleandata.txt. In the cleandata.xlsx and cleandata.txt files, I store the final tidy data set hello_data in these two files(actually they are the same, I just want to make sure the data readable in xlsx file). This hello_data is a data.frame which has average value of every variable for each activity(WALKING, WALKINGUPSTAIRS,WALKINGDOWNSTAIRS,SITTING,SATNDING,LAYING).
 Notice that the cleandata.xlsx has average value (unit:HZ) of different variables(only includes mean and standard deviation measurements)  based on different activity label names(WALKING, WALKINGUPSTAIRS,WALKINGDOWNSTAIRS,SITTING,SATNDING,LAYING). The first column of the xlsx file is the activity names. 
-As you can see, cleandata.xlsx has column names which correspond to all thr mean and standard deviation measurements: 
+As you can see, cleandata.xlsx and cleandata.txt have column names which correspond to all thr mean and standard deviation measurements: 
 average of tBodyAcc-mean()-X	
 average of tBodyAcc-mean()-Y	
 average of tBodyAcc-mean()-Z	
@@ -89,4 +89,4 @@ average of fBodyBodyGyroJerkMag-mean()
 average of fBodyBodyGyroJerkMag-std()	
 average of fBodyBodyGyroJerkMag-meanFreq(). 
 
-Then, the cleandata.xlsx shows average value of differnt variables above based on different activity names(WALKING, WALKINGUPSTAIRS,WALKINGDOWNSTAIRS,SITTING,SATNDING,LAYING). The unit for average value is HZ. 
+Then, the cleandata.xlsx and cleandata.txt shows average value of differnt variables above based on different activity names(WALKING, WALKINGUPSTAIRS,WALKINGDOWNSTAIRS,SITTING,SATNDING,LAYING). The unit for average value is HZ. 
