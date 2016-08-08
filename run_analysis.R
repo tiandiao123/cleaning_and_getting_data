@@ -65,10 +65,13 @@ colnames(hello_data)<-cnames
 
 
 hello_data<-as.data.frame(hello_data)
-
-#write our tidy data into a xlsx file
-write.xlsx(hello_data,"cleandata.xlsx")
-
+x<-x<-rownames(hello_data)
+x<-as.data.frame(x)
+colnames(x)<-'activity_label'
+hello_data<-cbind(x,hello_data)
+#write tidy dataset hello_data into a xlsx file and a txt file 
+write.xlsx(hello_data,"cleandata.xlsx",row.names = FALSE)
+write.table(hello_data,'cleandata.txt',row.names=FALSE)
 
 
 
